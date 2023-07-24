@@ -1,0 +1,241 @@
+div.content{
+    margin-right: 23.4rem;
+    width:76.1vw ;
+    background: #FFFFFF;
+    section#adminIndex{
+
+    }
+}
+header#topHeader{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    grid-gap: 1rem;
+    margin-right: 21.25rem;
+    section.userInfo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5rem;
+        justify-content: space-between;
+        align-items: center;
+        background: #FFFFFF;
+        padding: 1rem;
+        border-radius: 1rem;
+        div.userInfo{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            grid-gap: 1rem;
+            align-items: center;
+            div{
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: space-between;
+                grid-gap: 1rem;
+                align-items: center;
+            }
+        }
+        div.image{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: left;
+            align-items: center;
+            position: relative;
+            padding: 0 .1rem;
+            width: 6rem;
+            margin-right: auto;
+            figure{
+                height: 5.5rem;
+                width: 5.5rem;
+                border-radius: 2rem;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &:before{
+                content: '';
+                position: absolute;
+                height: 2.5px;
+                border-radius: 1rem;
+                width: 2.3rem;
+                bottom: -9px;
+                left: 34%;
+                background: $dark-purple;
+            }
+        }
+
+    }
+    section.notification{
+        background: #FFFFFF;
+        display: grid;
+        grid-template-columns: auto ;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 1.5rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        div.top{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            align-items: center;
+            grid-gap: .4rem;
+            span{
+                display: grid;
+                svg{
+                    height: 1.4rem;
+                    width: 1.4rem;
+                }
+            }
+            &.bottom{
+                display: grid;
+                grid-template-columns: repeat(3 , auto);
+                justify-content: center;
+                align-items: center;
+                grid-gap: 2.5rem;
+                span{
+                    background: $bg-color;
+                    padding: .5rem;
+                    border-radius: 1rem;
+                    svg{
+                        height: 1.5rem;
+                        width: 1.5rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+aside#adminSidebar{
+    position: fixed;
+    background: #FFFFFF;
+    align-items: flex-start;
+    width: 19vw;
+    top: 2rem;
+    right: 2rem;
+    height: 92vh;
+    padding: 1rem;
+    border-radius: 1rem;
+    figure{
+        width: 15rem;
+        height: 5rem;
+        margin: auto;
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: right;
+        align-items: center;
+        margin-top: 2rem;
+        li{
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-top: 1rem;
+            a , div{
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: right;
+                grid-gap: 1rem;
+                align-items: center;
+                height: 2.5rem;
+                padding: 0  .5rem;
+                width: 100%;
+                &.menu{
+                    display: flex;
+                    align-items: center;
+                    &.active{
+                        span.icon{
+                            svg{
+                                transform: rotate(-180deg);
+                            }
+                        }
+                    }
+                    span.icon{
+                        margin-right: auto;
+                        margin-left: -1rem;
+                        svg{
+                            height: 2rem;
+                            width: 1rem;
+                            margin-bottom: -.4rem;
+                            transition: all ease-in-out .3s;
+                            transform: rotate(-90deg);
+                        }
+                    }
+                }
+                span{
+                    text-align: center;
+                    font-size: 1.03rem;
+                    color: #727578;
+                    transition: all ease-in-out .3s;
+                    display: grid;
+                    svg{
+                        margin-top: -.5rem;
+                        height: 2.2rem;
+                        width: 2.1rem;
+                        margin-bottom: -.4rem;
+                        transition: all ease-in-out .3s;
+                    }
+                }
+                &:hover span{
+                    color: #1753FC;
+                    svg{
+                        fill: #1753FC !important;
+                        stroke: #fce57e;
+                    }
+                }
+            }
+            ul{
+                margin-top: 0;
+                li{
+                    margin-right: .7rem;
+                    margin-top: 0;
+                    a{
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        justify-content: right;
+                        grid-gap: .7rem;
+                        align-items: center;
+                        height: 2.5rem;
+                        padding: 0  .5rem;
+                        width: 100%;
+                        position: relative;
+                        span{
+                            text-align: center;
+                            font-size: 1rem;
+                            color: #727578;
+                            transition: all ease-in .3s;
+                        }
+                        &:hover span{
+                            color: #1753FC;
+                            svg{
+                                fill: #1753FC !important;
+                            }
+                        }
+                        &:hover span.point{
+                            background: #1753FC !important;
+                        }
+                        span.point{
+                            position: absolute;
+                            right: -2%;
+                            width: .39rem;
+                            height: .39rem;
+                            border-radius: .7rem;
+                            background: #727578;
+                            margin-top: -.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

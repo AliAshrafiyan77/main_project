@@ -1,0 +1,23 @@
+@mixin AddFontFace($name , $fontWeight , $fontName){
+    @font-face {
+        font-family: $name;
+        font-style: normal;
+        font-weight: $fontWeight;
+        src: url('./fonts/eot'+ $fontName + '.eot');
+        src: url('./fonts/eot'+ $fontName + '.eot' + '?#iefix') format('embedded-opentype');
+        src: url('./fonts/ttf/'+ $fontName + '.ttf') format('truetype');
+        src: url('./fonts/woff/'+ $fontName + '.woff') format('woff');
+        src: url('./fonts/woff2/'+ $fontName + '.woff2') format('woff2');
+    }
+}
+//kalameh_Font
+@include AddFontFace('kalameh' , 100 , 'KalamehWeb_thin');
+@include AddFontFace('kalameh' , 500 , 'KalamehWeb_Regular');
+@include AddFontFace('kalameh' , 900 , 'KalamehWeb_Bold');
+@include AddFontFace('kalameh' , bold , 'KalamehWeb_Black');
+
+//dana_Font
+@include AddFontFace('dana' , 100 , 'DanaFaNum-Thin');
+@include AddFontFace('dana' , 500 , 'DanaFaNum-Regular');
+@include AddFontFace('dana' , 900 , 'DanaFaNum-Bold');
+@include AddFontFace('dana' , bold , 'DanaFaNum-Black');
