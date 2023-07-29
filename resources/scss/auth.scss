@@ -1,0 +1,115 @@
+@import "parts/fonts";
+@import "parts/define";
+@import "parts/variable";
+section.register{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+    height: 50rem;
+    background: #FFFFFF;
+    form.register{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border-radius: .4rem;
+        grid-gap: 1rem;
+        background: #EAF4FE;
+        padding: .7rem;
+        position: relative;
+        div.top{
+            position: absolute;
+            bottom: 72%;
+            right: 0;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -4rem;
+            h3{
+                text-align: right;
+                color: #5416CF;
+                font-size: 1.19rem;
+                font-weight: 600;
+            }
+            a{
+                span{
+                    svg{
+                        height: 15rem;
+                        width: 2rem;
+                    }
+                }
+            }
+        }
+        div.item{
+            display: grid;
+            grid-template-columns: auto;
+            position: relative;
+            &.password{
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: .7rem;
+                div.error{
+                    margin-top: 0;
+                    span{
+                        color: #f85353;
+                    }
+                }
+            }
+            input{
+                height: 3.4rem;
+                border-radius: .4rem;
+                background: #f2f8fd;
+                padding:0 .7rem ;
+                color: #6d4cb5;
+                border: solid #564778 .1px;
+                font-weight: 700;
+            }
+            ::placeholder {
+                color: #5e2dbc;
+                font-weight: 500;
+            }
+            label{
+                font-size: .9rem;
+                margin-right: .7rem;
+                color: #5416CF;
+            }
+            div.error{
+                margin-top: .5rem;
+                span{
+                    color: #f85353;
+                    font-size: .8rem;
+                }
+            }
+        }
+        button{
+            padding:1rem;
+            text-align: center;
+            border-radius: .4rem;
+            background: #5416CF;
+            color: #FFFFFF;
+            font-size: 1.05rem;
+            font-weight: 700;
+        }
+    }
+    div.registerIcon{
+        display: grid;
+        align-content: center;
+        align-items: center;
+        figure{
+            display: grid;
+            align-content: center;
+            height: 45rem;
+            width: 30rem;
+            border-radius: .4rem;
+            overflow: hidden;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

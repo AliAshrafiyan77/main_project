@@ -14,7 +14,7 @@
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="{{route('galleriesIndex')}}">
                 <span>
                     <svg class="icon">
                          <use xlink:href="#galleries"></use>
