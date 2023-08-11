@@ -27,7 +27,7 @@
                     <use xlink:href="#calendars"></use>
                 </svg>
             </span>
-            <span>امروز پنجشنبه 29 تیر</span>
+            <span>{{verta()->formatJalaliDate()}}</span>
         </div>
         <div class="top bottom">
             <span>
